@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Spring6WebappApplication<spring6-webapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "springframework.spring6webapp.Spring6WebappApplication",
+            "projectName": "spring6-webapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
