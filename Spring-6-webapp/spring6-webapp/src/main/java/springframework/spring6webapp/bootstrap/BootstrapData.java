@@ -52,6 +52,8 @@ public class BootstrapData implements CommandLineRunner{
 
         luisSave.getBooks().add(pesSave);
         ferSave.getBooks().add(crSave);
+        pesSave.getAuthors().add(luisSave);
+        crSave.getAuthors().add(ferSave);
 
         Publisher pb= new Publisher();
         pb.setName("Antonia Rebeiro");
@@ -68,6 +70,7 @@ public class BootstrapData implements CommandLineRunner{
         authorRepository.save(ferSave);
 
         bookRepository.save(pesSave);
+        bookRepository.save(crSave);
 
         System.out.println("In Bootstrap");
         System.out.println("Author Count: " + authorRepository.count());
